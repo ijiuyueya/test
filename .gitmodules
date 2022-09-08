@@ -1,0 +1,4 @@
+[submodule "common-child-moudle"]
+	path = common-child-moudle
+	url = https://github.com/ijiuyueya/test-common.git
+	branch = master
