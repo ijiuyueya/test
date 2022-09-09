@@ -1,0 +1,39 @@
+// 单行注释
+/* 多行注释  alt + shite + a */
+/* ! 强制注释 */
+@import "base.scss";
+
+.bbb{
+    width: 1rem;
+}
+@mixin bbb($color,$background-color){
+    color:darken($color,10%);
+    background-color:lighten($background-color,20%);
+    a{
+        font-size: .12rem;
+    }
+}
+.box2{
+    @include bbb(red,green);
+}
+.box3{
+    @include bbb($background-color:blue,$color:yellow)
+}
+
+.box4{
+    @extend .box2;
+    border-color:pink;
+}
+
+$colors:(light:#ffffff,dark:#000000);
+
+@function color($key){
+  @if not map-has-key($colors,$key){
+    @error "在 $colors 里没找到#{$key} 这个key";
+    }
+  @return map-get($colors,$key);
+}
+
+body{
+    background-color: color(red);
+}

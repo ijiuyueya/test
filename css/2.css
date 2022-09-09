@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/* 多行注释  alt + shite + a */
+/* ! 强制注释 */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.bbb {
+  width: 1rem;
+}
+
+.box2, .box4 {
+  color: #cc0000;
+  background-color: #00e600;
+}
+
+.box2 a, .box4 a {
+  font-size: .12rem;
+}
+
+.box3 {
+  color: #cccc00;
+  background-color: #6666ff;
+}
+
+.box3 a {
+  font-size: .12rem;
+}
+
+.box4 {
+  border-color: pink;
+}
+
+body {
+  background-color: #ffffff;
+}

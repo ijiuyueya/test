@@ -1,0 +1,14 @@
+ccc
+    width: 1rem
+@mixin bbb $color,{$background-color}
+    color:$color
+    background-color:$background-color
+    a
+        font-size: .12rem
+    
+
+box2
+    @include bbb red,green 
+
+box3
+    @include bbb $background-color:blue,$color:yellow
